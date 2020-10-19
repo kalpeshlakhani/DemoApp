@@ -1,6 +1,716 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#37474F</color>
+    <!--<color name="colorPrimary">#00D0B9</color>-->
+    <color name="colorPrimaryDark">#37474F</color>
+    <color name="colorAccent">#37474F</color>
+    <!--  <color name="colorAccent">#00D0B9</color>-->
+
+    <color name="colorApp">#37474F</color>
+  <!--  <color name="colorApp">#00D0B9</color>-->
+
+    <color name="eyeWhite">#FFFACD</color>
+    <color name="eyelid">#B0E0E6</color>
+    <color name="iris">#8B4513</color>
+    <color name="eyeOutline">#000000</color>
+    <color name="overlayHint">#7FFF00</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkWhite">#F1F0F0</color>
+    <color name="colorRedDark">#d11616</color>
+    <color name="colorGrapeFruit">#ED5565</color>
+    <color name="colorGrapeFruitDark">#DA4453</color>
+    <color name="colorBitterSweet">#FC6E51</color>
+    <color name="colorBitterSweetDark">#E9573F</color>
+    <color name="colorFlower">#FFCE54</color>
+    <color name="colorFlowerDark">#F68B42</color>
+    <color name="colorGrass">#A0D468</color>
+    <color name="colorGrassDark">#8CC152</color>
+    <color name="colorBlueJeans1">#509CEC</color>
+    <color name="colorBlueJeansDark1">#4A89DC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorLavanderDark">#967ADC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="colorAqua1">#4FC1E9</color>
+    <color name="colorAquaDark1">#3BAFDA</color>
+    <color name="colorPinkRose">#EC87C0</color>
+    <color name="colorPinkRoseDark">#D770AD</color>
+    <color name="colorBlack">#000000</color>
+    <color name="BrandBlack">#E42E2A2A</color>
+    <color name="colorBrand">#F07340</color>
+    <color name="colorhintPink">#F80759</color>
+
+    <color name="graylight">#FAFAFA</color>
+    <color name="colorGreenDark">#EB356402</color>
+    <color name="DD">#DDDDDD</color>
+    <color name="aa">#AAAAAA</color>
+    <color name="BB">#BBBBBB</color>
+    <color name="CC">#CCCCCC</color>
+    <color name="EE">#EEEEEE</color>
+    <color name="graynext">#F5F5F5</color>
+
+    <color name="colorbuttonpress">#B60E0E</color>
+    <color name="DarkRed">#F80606</color>
+    <color name="PINK">#B210CE</color>
+    <color name="GREENLIGHT">#31f05b</color>
+    <color name="ORANGE">#d11616</color>
+    <color name="GREEN">#2E7D32</color>
+    <color name="BLACK">@android:color/black</color>
+    <color name="BLUE">#092BEC</color>
+    <!-- <color name="back">#FBE9E7</color>-->
+    <color name="colorPinkRose2">#F8568D</color>
+    <color name="colorbuttonpresssss">#F17A7A</color>
+
+
+    <color name="pink">#DEFADF</color>
+    <!--   <color name="colorBrand2">#2B3363</color>-->
+    <!-- <color name="colorBrand2">#B60E0E</color>-->
+    <color name="colorBrand2">#d11616</color>
+    <!--  <color name="colorblue">#F1DFD9</color>-->
+    <color name="colorpink">#6C7DD1</color>
+    <!--<color name="colorbluelight">#E5E8F7</color>-->
+    <color name="colorbluelight">#F2FCFB</color>
+    <color name="golden">#FFEB3B</color>
+    <color name="greenn">#B9DB92</color>
+    <color name="colorpinks">#FACEDC</color>
+    <!--<color name="colorBrand3">#ffebee</color>-->
+    <!--  <color name="colorBrand3">#E8E3F0</color>-->
+    <color name="colorBrand3">#96C2BE</color>
+    <color name="transepreant">@android:color/transparent</color>
+    <color name="colorBrand4">#5E9791</color>
+    <color name="colorBrand42">#5E9791</color>
+    <color name="aboutustitle">#F58D34</color>
+    <color name="colorAqua">#4FC1E9</color>
+    <color name="colorAquaDark">#3BAFDA</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorBlueJeansDark">#4A89DC</color>
+
+
+    <color name="colorBlue">#2e6ae5</color>
+    <color name="Blue">#1c3e85</color>
+    <color name="colorGrey">#f5f5f5</color>
+    <color name="colorText">#073135</color>
+    <color name="Grey_2">#cbd0d0</color>
+    <color name="Grey_3">#c3c8c8</color>
+    <color name="Grey_4">#ced5d6</color>
+    <color name="Grey_5">#696969</color>
+    <color name="Grey_6">#cbcbcb</color>
+    <color name="Grey_7">#f4f7f7</color>
+    <color name="Grey_8">#cececf</color>
+    <color name="Grey_9">#f2f2f2</color>
+    <color name="Grey_10">#f5f5f5</color>
+    <color name="Grey_11">#c2cbcc</color>
+    <color name="colorView">#e4ebec</color>
+    <color name="Grey_12">#f2f7f1</color>
+    <color name="Grey_13">#888888</color>
+    <color name="Grey_14">#cacaca</color>
+    <color name="Grey_15">#acacac</color>
+    <color name="Grey_16">#a2a2a2</color>
+    <color name="transparent">#00ffffff</color>
+
+
+    <color name="lightgrey">#ececec</color>
+    <color name="darkwhite">#ececec</color>
+
+    <color name="gren_br">#5ec131</color>
+    <color name="cream">#e9bfa0</color>
+    <color name="toolbar_items">#313131</color>
+
+    <color name="grey">#5b5b5b</color>
+
+    <!--Post card colors-->
+    <color name="post_heading">#2e2e2e</color>
+    <color name="post_details">#747474</color>
+
+    <color name="settings_black">#535353</color>
+
+
+    <color name="pink2">#741616</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorback">#131F27</color>
+    <color name="colorbackk">#061722</color>
+
+    <color name="colorblack">@android:color/black</color>
+
+    <color name="blue_1">#1E88E5</color>
+    <color name="bluelightr">#E0F7FA</color>
+    <color name="bluelight2">#90CAF9</color>
+    <color name="bluelight3">#7986CB</color>
+    <color name="bluelight4">#9FA8DA</color>
+    <color name="bluelight5">#C5CAE9</color>
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="pinklight">#FFF1F2</color>
+    <color name="greenlight">#E8F5E9</color>
+    <color name="colorPinkDark">#DD57A5</color>
+    <color name="colorMintDark">#37BC9B</color>
+    <color name="bluelight">#C7DFF5</color>f
+
+
+    <color name="defaultColor">#f2f2f2</color>
+
+    <!-- <color name="colorPrimary">#F76497</color>-->
+    <!-- <color name="colorPrimary">#26A69A</color>
+     <color name="colorPrimaryDark">#00897B</color>
+     <color name="colorAccent">#D81B60</color>-->
+    <color name="colorgraylight">#DAD6D6</color>
+    <color name="colorgraymedium">#AFACAC</color>
+    <color name="colorBlueDark">#1565C0</color>
+    <color name="colorBtnSendInquiry">#1565C0</color>
+    <color name="toolbartextcolor">#1565C0</color>
+    <color name="btnpressed">#BE1655</color>
+    <color name="btnnormal">#E21A62</color>
+    <color name="colooooor">#D1DDEE</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="ivory">#FFFFF0</color>
+    <color name="lightyellow">#FFFFE0</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="lemonchiffon">#FFFACD</color>
+    <color name="cornsilk">#FFF8DC</color>
+    <color name="seashell">#FFF5EE</color>
+    <color name="lavenderblush">#FFF0F5</color>
+    <color name="papayawhip">#FFEFD5</color>
+    <color name="blanchedalmond">#FFEBCD</color>
+    <color name="mistyrose">#FFE4E1</color>
+    <color name="bisque">#FFE4C4</color>
+    <color name="moccasin">#FFE4B5</color>
+    <color name="navajowhite">#FFDEAD</color>
+    <color name="peachpuff">#FFDAB9</color>
+    <color name="gold">#FFD700</color>
+
+    <color name="lightpink">#FFB6C1</color>
+    <color name="orange">#FFA500</color>
+    <color name="lightsalmon">#FFA07A</color>
+    <color name="darkorange">#FF8C00</color>
+    <color name="coral">#FF7F50</color>
+    <color name="hotpink">#FF69B4</color>
+    <color name="tomato">#FF6347</color>
+    <color name="orangered">#FF4500</color>
+    <color name="deeppink">#FF1493</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="oldlace">#FDF5E6</color>
+    <color name="lightgoldenrodyellow">#FAFAD2</color>
+    <color name="linen">#FAF0E6</color>
+    <color name="antiquewhite">#FAEBD7</color>
+    <color name="salmon">#FA8072</color>
+    <color name="ghostwhite">#F8F8FF</color>
+    <color name="mintcream">#F5FFFA</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="wheat">#F5DEB3</color>
+    <color name="sandybrown">#F4A460</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="honeydew">#F0FFF0</color>
+    <color name="aliceblue">#F0F8FF</color>
+    <color name="khaki">#F0E68C</color>
+    <color name="lightcoral">#F08080</color>
+    <color name="palegoldenrod">#EEE8AA</color>
+    <color name="violet">#EE82EE</color>
+    <color name="darksalmon">#E9967A</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="lightcyan">#E0FFFF</color>
+    <color name="burlywood">#DEB887</color>
+    <color name="plum">#DDA0DD</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="crimson">#DC143C</color>
+    <color name="palevioletred">#DB7093</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="thistle">#D8BFD8</color>
+
+    <color name="tan">#D2B48C</color>
+    <color name="chocolate">#D2691E</color>
+    <color name="peru">#CD853F</color>
+    <color name="indianred">#CD5C5C</color>
+    <color name="mediumvioletred">#C71585</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="darkkhaki">#BDB76B</color>
+    <color name="rosybrown">#BC8F8F</color>
+    <color name="mediumorchid">#BA55D3</color>
+    <color name="darkgoldenrod">#B8860B</color>
+    <color name="firebrick">#B22222</color>
+    <color name="powderblue">#B0E0E6</color>
+    <color name="lightsteelblue">#B0C4DE</color>
+    <color name="paleturquoise">#AFEEEE</color>
+    <color name="greenyellow">#ADFF2F</color>
+    <color name="lightblue">#ADD8E6</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="brown">#A52A2A</color>
+    <color name="sienna">#A0522D</color>
+    <color name="yellowgreen">#9ACD32</color>
+    <color name="darkorchid">#9932CC</color>
+    <color name="palegreen">#98FB98</color>
+    <color name="darkviolet">#9400D3</color>
+    <color name="mediumpurple">#9370DB</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="darkseagreen">#8FBC8F</color>
+    <color name="saddlebrown">#8B4513</color>
+    <color name="darkmagenta">#8B008B</color>
+    <color name="darkred">#8B0000</color>
+    <color name="blueviolet">#8A2BE2</color>
+    <color name="lightskyblue">#87CEFA</color>
+    <color name="skyblue">#87CEEB</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aquamarine">#7FFFD4</color>
+    <color name="chartreuse">#7FFF00</color>
+    <color name="lawngreen">#7CFC00</color>
+    <color name="mediumslateblue">#7B68EE</color>
+    <color name="lightslategray">#778899</color>
+    <color name="slategray">#708090</color>
+    <color name="olivedrab">#6B8E23</color>
+    <color name="slateblue">#6A5ACD</color>
+    <color name="dimgray">#696969</color>
+    <color name="mediumaquamarine">#66CDAA</color>
+    <color name="cornflowerblue">#6495ED</color>
+    <color name="cadetblue">#5F9EA0</color>
+    <color name="darkolivegreen">#556B2F</color>
+    <color name="indigo">#4B0082</color>
+    <color name="mediumturquoise">#48D1CC</color>
+    <color name="darkslateblue">#483D8B</color>
+    <color name="steelblue">#4682B4</color>
+    <color name="royalblue">#4169E1</color>
+    <color name="turquoise">#40E0D0</color>
+    <color name="mediumseagreen">#3CB371</color>
+    <color name="limegreen">#32CD32</color>
+    <color name="darkslategray">#2F4F4F</color>
+    <color name="seagreen">#2E8B57</color>
+    <color name="forestgreen">#228B22</color>
+    <color name="lightseagreen">#20B2AA</color>
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="midnightblue">#191970</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="springgreen">#00FF7F</color>
+    <color name="lime">#00FF00</color>
+    <color name="mediumspringgreen">#00FA9A</color>
+    <color name="darkturquoise">#00CED1</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="darkcyan">#008B8B</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="darkgreen">#006400</color>
+    <color name="blue">#0000FF</color>
+    <color name="mediumblue">#0000CD</color>
+    <color name="darkblue">#00008B</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+
+    <color name="darker_gray">#aaa</color>
+
+
+    <color name="colorAccentDark">#F50057</color>
+    <color name="colorAccentLight">#FF80AB</color>
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_70">#B3000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+    <color name="overlay_dark_90">#E6000000</color>
+
+    <color name="overlay_light_10">#1AFFFFFF</color>
+    <color name="overlay_light_20">#33FFFFFF</color>
+    <color name="overlay_light_30">#4DFFFFFF</color>
+    <color name="overlay_light_40">#66FFFFFF</color>
+    <color name="overlay_light_50">#8FFFFFF0</color>
+    <color name="overlay_light_60">#99FFFFFF</color>
+    <color name="overlay_light_70">#B3FFFFFF</color>
+    <color name="overlay_light_80">#CCFFFFFF</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_95">#1a1a1a</color>
+    <color name="grey_100_">#0d0d0d</color>
+
+
+    <!--Material color list from https://material.io/guidelines/style/color.html-->
+
+    <color name="red_50">#FFEBEE</color>
+    <color name="red_100">#FFCDD2</color>
+    <color name="red_200">#EF9A9A</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_400">#EF5350</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_600">#E53935</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="red_800">#C62828</color>
+    <color name="red_900">#B71C1C</color>
+    <color name="red_A100">#FF8A80</color>
+    <color name="red_A200">#FF5252</color>
+    <color name="red_A400">#FF1744</color>
+    <color name="red_A700">#D50000</color>
+
+    <color name="deep_purple_50">#EDE7F6</color>
+    <color name="deep_purple_100">#D1C4E9</color>
+    <color name="deep_purple_200">#B39DDB</color>
+    <color name="deep_purple_300">#9575CD</color>
+    <color name="deep_purple_400">#7E57C2</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="deep_purple_600">#5E35B1</color>
+    <color name="deep_purple_700">#512DA8</color>
+    <color name="deep_purple_800">#4527A0</color>
+    <color name="deep_purple_900">#311B92</color>
+    <color name="deep_purple_A100">#B388FF</color>
+    <color name="deep_purple_A200">#7C4DFF</color>
+    <color name="deep_purple_A400">#651FFF</color>
+    <color name="deep_purple_A700">#6200EA</color>
+
+    <color name="light_blue_50">#E1F5FE</color>
+    <color name="light_blue_100">#B3E5FC</color>
+    <color name="light_blue_200">#81D4FA</color>
+    <color name="light_blue_300">#4FC3F7</color>
+    <color name="light_blue_400">#29B6F6</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="light_blue_600">#039BE5</color>
+    <color name="light_blue_700">#0288D1</color>
+    <color name="light_blue_800">#0277BD</color>
+    <color name="light_blue_900">#01579B</color>
+    <color name="light_blue_A100">#80D8FF</color>
+    <color name="light_blue_A200">#40C4FF</color>
+    <color name="light_blue_A400">#00B0FF</color>
+    <color name="light_blue_A700">#0091EA</color>
+
+    <color name="green_50">#E8F5E9</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_600">#43A047</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="green_A100">#B9F6CA</color>
+    <color name="green_A200">#69F0AE</color>
+    <color name="green_A400">#00E676</color>
+    <color name="green_A700">#00C853</color>
+
+    <color name="yellow_50">#FFFDE7</color>
+    <color name="yellow_100">#FFF9C4</color>
+    <color name="yellow_200">#FFF59D</color>
+    <color name="yellow_300">#FFF176</color>
+    <color name="yellow_400">#FFEE58</color>
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="yellow_600">#FDD835</color>
+    <color name="yellow_700">#FBC02D</color>
+    <color name="yellow_800">#F9A825</color>
+    <color name="yellow_900">#F57F17</color>
+    <color name="yellow_A100">#FFFF8D</color>
+    <color name="yellow_A200">#FFFF00</color>
+    <color name="yellow_A400">#FFEA00</color>
+    <color name="yellow_A700">#FFD600</color>
+
+    <color name="deep_orange_50">#FBE9E7</color>
+    <color name="deep_orange_100">#FFCCBC</color>
+    <color name="deep_orange_200">#FFAB91</color>
+    <color name="deep_orange_300">#FF8A65</color>
+    <color name="deep_orange_400">#FF7043</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="deep_orange_600">#F4511E</color>
+    <color name="deep_orange_700">#E64A19</color>
+    <color name="deep_orange_800">#D84315</color>
+    <color name="deep_orange_900">#BF360C</color>
+    <color name="deep_orange_A100">#FF9E80</color>
+    <color name="deep_orange_A200">#FF6E40</color>
+    <color name="deep_orange_A400">#FF3D00</color>
+    <color name="deep_orange_A700">#DD2C00</color>
+
+    <color name="blue_grey_50">#ECEFF1</color>
+    <color name="blue_grey_100">#CFD8DC</color>
+    <color name="blue_grey_200">#B0BEC5</color>
+    <color name="blue_grey_300">#90A4AE</color>
+    <color name="blue_grey_400">#78909C</color>
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+    <color name="blue_grey_800_overlay">#E637474F</color>
+
+    <color name="pink_50">#FCE4EC</color>
+    <color name="pink_100">#F8BBD0</color>
+    <color name="pink_200">#F48FB1</color>
+    <color name="pink_300">#F06292</color>
+    <color name="pink_400">#EC407A</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="pink_600">#D81B60</color>
+    <color name="pink_700">#C2185B</color>
+    <color name="pink_800">#AD1457</color>
+    <color name="pink_900">#880E4F</color>
+    <color name="pink_A100">#FF80AB</color>
+    <color name="pink_A200">#FF4081</color>
+    <color name="pink_A400">#F50057</color>
+    <color name="pink_A700">#C51162</color>
+
+    <color name="indigo_50">#E8EAF6</color>
+    <color name="indigo_100">#C5CAE9</color>
+    <color name="indigo_200">#9FA8DA</color>
+    <color name="indigo_300">#7986CB</color>
+    <color name="indigo_400">#5C6BC0</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_600">#3949AB</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="indigo_800">#283593</color>
+    <color name="indigo_900">#1A237E</color>
+    <color name="indigo_A100">#8C9EFF</color>
+    <color name="indigo_A200">#536DFE</color>
+    <color name="indigo_A400">#3D5AFE</color>
+    <color name="indigo_A700">#304FFE</color>
+    <color name="indigo_800_overlay">#E6283593</color>
+
+    <color name="cyan_50">#E0F7FA</color>
+    <color name="cyan_100">#B2EBF2</color>
+    <color name="cyan_200">#80DEEA</color>
+    <color name="cyan_300">#4DD0E1</color>
+    <color name="cyan_400">#26C6DA</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_600">#00ACC1</color>
+    <color name="cyan_700">#0097A7</color>
+    <color name="cyan_800">#00838F</color>
+    <color name="cyan_900">#006064</color>
+    <color name="cyan_A100">#84FFFF</color>
+    <color name="cyan_A200">#18FFFF</color>
+    <color name="cyan_A400">#00E5FF</color>
+    <color name="cyan_A700">#00B8D4</color>
+    <color name="cyan_800_overlay">#E600838F</color>
+
+    <color name="light_green_50">#F1F8E9</color>
+    <color name="light_green_100">#DCEDC8</color>
+    <color name="light_green_200">#C5E1A5</color>
+    <color name="light_green_300">#AED581</color>
+    <color name="light_green_400">#9CCC65</color>
+    <color name="light_green_500">#8BC34A</color>
+    <color name="light_green_600">#7CB342</color>
+    <color name="light_green_700">#689F38</color>
+    <color name="light_green_800">#558B2F</color>
+    <color name="light_green_900">#33691E</color>
+    <color name="light_green_A100">#CCFF90</color>
+    <color name="light_green_A200">#B2FF59</color>
+    <color name="light_green_A400">#76FF03</color>
+    <color name="light_green_A700">#64DD17</color>
+
+    <color name="amber_50">#FFF8E1</color>
+    <color name="amber_100">#FFECB3</color>
+    <color name="amber_200">#FFE082</color>
+    <color name="amber_300">#FFD54F</color>
+    <color name="amber_400">#FFCA28</color>
+    <color name="amber_500">#FFC107</color>
+    <color name="amber_600">#FFB300</color>
+    <color name="amber_700">#FFA000</color>
+    <color name="amber_800">#FF8F00</color>
+    <color name="amber_900">#FF6F00</color>
+    <color name="amber_A100">#FFE57F</color>
+    <color name="amber_A200">#FFD740</color>
+    <color name="amber_A400">#FFC400</color>
+    <color name="amber_A700">#FFAB00</color>
+
+    <color name="brown_50">#EFEBE9</color>
+    <color name="brown_100">#D7CCC8</color>
+    <color name="brown_200">#BCAAA4</color>
+    <color name="brown_300">#A1887F</color>
+    <color name="brown_400">#8D6E63</color>
+    <color name="brown_500">#795548</color>
+    <color name="brown_600">#6D4C41</color>
+    <color name="brown_700">#5D4037</color>
+    <color name="brown_800">#4E342E</color>
+    <color name="brown_900">#3E2723</color>
+
+    <color name="purple_50">#F3E5F5</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_300">#BA68C8</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_600">#8E24AA</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_800">#6A1B9A</color>
+    <color name="purple_900">#4A148C</color>
+    <color name="purple_A100">#EA80FC</color>
+    <color name="purple_A200">#E040FB</color>
+    <color name="purple_A400">#D500F9</color>
+    <color name="purple_A700">#AA00FF</color>
+
+    <color name="blue_50">#E3F2FD</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_900">#0D47A1</color>
+    <color name="blue_A100">#82B1FF</color>
+    <color name="blue_A200">#448AFF</color>
+    <color name="blue_A400">#2979FF</color>
+    <color name="blue_A700">#2962FF</color>
+
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_400">#26A69A</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_600">#00897B</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_800">#00695C</color>
+    <color name="teal_900">#004D40</color>
+    <color name="teal_A100">#A7FFEB</color>
+    <color name="teal_A200">#64FFDA</color>
+    <color name="teal_A400">#1DE9B6</color>
+    <color name="teal_A700">#00BFA5</color>
+
+    <color name="lime_50">#F9FBE7</color>
+    <color name="lime_100">#F0F4C3</color>
+    <color name="lime_200">#E6EE9C</color>
+    <color name="lime_300">#DCE775</color>
+    <color name="lime_400">#D4E157</color>
+    <color name="lime_500">#CDDC39</color>
+    <color name="lime_600">#C0CA33</color>
+    <color name="lime_700">#AFB42B</color>
+    <color name="lime_800">#9E9D24</color>
+    <color name="lime_900">#827717</color>
+    <color name="lime_A100">#F4FF81</color>
+    <color name="lime_A200">#EEFF41</color>
+    <color name="lime_A400">#C6FF00</color>
+    <color name="lime_A700">#AEEA00</color>
+
+    <color name="orange_50">#FFF3E0</color>
+    <color name="orange_100">#FFE0B2</color>
+    <color name="orange_200">#FFCC80</color>
+    <color name="orange_300">#FFB74D</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_600">#FB8C00</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="orange_900">#E65100</color>
+    <color name="orange_A100">#FFD180</color>
+    <color name="orange_A200">#FFAB40</color>
+    <color name="orange_A400">#FF9100</color>
+    <color name="orange_A700">#FF6D00</color>
+
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_1000">#1a1a1a</color>
+
+
+    <!--for random color generator -->
+    <array name="mdcolor_random">
+        <item type="color">#e91e63</item>
+        <item type="color">#9c27b0</item>
+        <item type="color">#673ab7</item>
+        <item type="color">#E53935</item>
+        <item type="color">#5677fc</item>
+        <item type="color">#689F38</item>
+        <item type="color">#03a9f4</item>
+        <item type="color">#00bcd4</item>
+        <item type="color">#009688</item>
+        <item type="color">#259b24</item>
+        <item type="color">#ff5722</item>
+        <item type="color">#795548</item>
+        <item type="color">#607d8b</item>
+        <item type="color">#ff9800</item>
+    </array>
+
+    <color name="ucrop_color_toolbar">#FFFFFF</color>
+
+    <color name="inactiveAddButtonColor">#B3B3B3</color>
+    <color name="infoPageBackgroundColor">#EBEBEB</color>
+    <color name="actionBarArrowColor">@color/colorAccent</color>
+    <color name="real_black">#b7000000</color>
+    <color name="Modal">#b7000000</color>
+    <color name="bg_row_background">#ff303e</color>
+    <color name="bg_row_foreground">#fcfcfc</color>
+    <color name="intro_magic_background_color">#373737</color>
+    <color name="intro_manual_background_color">#E64E4E</color>
+    <color name="intro_zoom_background_color">#4E5DE6</color>
+
+    <color name="colorWhite_">#ffffff</color>
+    <color name="colorGray">#666666</color>
+    <color name="colorGrayy">#DA090707</color>
+    <color name="colorBtnBorder">#8c8c8c</color>
+    <color name="colorIcon">#65b0e6</color>
+    <!--<color name="colorRed">#f44336</color>-->
+    <color name="colorGreen">#4cd964</color>
+    <color name="colorRed">#cc2500</color>
+    <color name="colorDivider">#BBBDC0</color>
+    <color name="color_ic_green">#13871f</color>
+    <color name="color_ic_red">#cc2500</color>
+    <color name="colorYellow">#ffff4d</color>
+    <color name="colorOrange">#e25b21</color>
+
+    <color name="dialog_btn_color">#1d64f0</color>
+    <color name="dialog_divider">#686868</color>
+
+    <color name="activityBackground">@color/colorWhite_</color>
+    <color name="colorThemeBlue">@color/colorPrimary</color>
+    <color name="colorMenuWhite">@color/colorWhite_</color>
+    <color name="colorButtonDark">@color/colorPrimary</color>
+
+    <color name="colorBtnEnd">#1d64f0</color>
+    <color name="colorBtnStart">#1ad5fd</color>
+    <color name="colorBtnEndLight">#821d64f0</color>
+    <color name="colorBtnStartLight">#1ad5fd</color>
+    <color name="colorBtnEndLight15">#461d64f0</color>
+    <color name="colorBtnStartLight15">#461ad5fd</color>
+
+    <color name="color_0">#33ffff</color>
+    <color name="color_1">#ffff4d</color>
+    <color name="color_2">#ff8c1a</color>
+    <color name="color_3">#65d965</color>
+    <color name="color_4">#3385ff</color>
+    <color name="color_5">#f22599</color>
+    <color name="color_6">#ff66ff</color>
+    <color name="color_7">#4fd3f1</color>
+    <color name="color_8">#e25b21</color>
+    <color name="color_9">#4a863b</color>
+
+    <!-- ProgressBar colors -->
+    <color name="circular_new_blue">#637bb8</color>
+    <color name="circular_new_blue_dark">#2454a0</color>
+    <array name="circular_default_color_sequence">
+        <item>@color/circular_new_blue</item>
+        <item>@color/circular_new_blue_dark</item>
+        <item>@color/circular_new_blue</item>
+        <item>@color/circular_new_blue_dark</item>
+    </array>
+
+
 </resources>
+
+
