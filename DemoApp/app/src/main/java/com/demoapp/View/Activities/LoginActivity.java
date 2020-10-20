@@ -1,24 +1,21 @@
-package com.demoapp.view;
+package com.demoapp.View.Activities;
 
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.demoapp.DemoApp;
 import com.demoapp.R;
-import com.demoapp.utils.SharedPrefManager;
-import com.demoapp.utils.Utils;
+import com.demoapp.Utils.SharedPrefManager;
+import com.demoapp.Utils.Utils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,7 +40,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initialization();
-
     }
 
     private void initialization() {
@@ -72,7 +68,27 @@ public class LoginActivity extends AppCompatActivity {
             public void afterTextChanged(Editable text) {
                 if (text != null && text.length() > 0) {
                     strEmail = text.toString();
-                    if (strPassword != null && strPassword.length() > 0) {
+
+                    String strEmail = etEmail.getText().toString();
+                    String strPassword = etPassword.getText().toString();
+
+                    if (strEmail == null || !Utils.isValidEmail(strEmail)) {
+                        etEmail.requestFocus();
+                        btnSignIn.setEnabled(false);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
+                    } else if (strPassword == null || strPassword.length() < 8 || strPassword.length() > 15) {
+                       // etPassword.requestFocus();
+                        btnSignIn.setEnabled(false);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
+                    }else{
+                        btnSignIn.setEnabled(true);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_pressed));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.colorWhite));
+                    }
+
+                    /*if (strPassword != null && strPassword.length() > 0) {
                         btnSignIn.setEnabled(true);
                         btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_pressed));
                         btnSignIn.setTextColor(getResources().getColor(R.color.colorWhite));
@@ -80,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
                         btnSignIn.setEnabled(false);
                         btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
                         btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
-                    }
+                    }*/
                 } else {
                     strEmail = "";
                     btnSignIn.setEnabled(false);
@@ -104,7 +120,29 @@ public class LoginActivity extends AppCompatActivity {
             public void afterTextChanged(Editable text) {
                 if (text != null && text.length() > 0) {
                     strPassword = text.toString();
-                    if (strEmail != null && strEmail.length() > 0) {
+
+                    String strEmail = etEmail.getText().toString();
+                    String strPassword = etPassword.getText().toString();
+
+                    if (strEmail == null || !Utils.isValidEmail(strEmail)) {
+                        //etEmail.setError("Please enter valid email");
+                       // etEmail.requestFocus();
+                        btnSignIn.setEnabled(false);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
+                    } else if (strPassword == null || strPassword.length() < 8 || strPassword.length() > 15) {
+                       // etPassword.setError("Please enter minimum 8 characters and maximum 15 characters password");
+                        etPassword.requestFocus();
+                        btnSignIn.setEnabled(false);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
+                    }else{
+                        btnSignIn.setEnabled(true);
+                        btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_pressed));
+                        btnSignIn.setTextColor(getResources().getColor(R.color.colorWhite));
+                    }
+
+                  /*  if (strEmail != null && strEmail.length() > 0) {
                         btnSignIn.setEnabled(true);
                         btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_pressed));
                         btnSignIn.setTextColor(getResources().getColor(R.color.colorWhite));
@@ -112,7 +150,7 @@ public class LoginActivity extends AppCompatActivity {
                         btnSignIn.setEnabled(false);
                         btnSignIn.setBackground(getResources().getDrawable(R.drawable.border_normal));
                         btnSignIn.setTextColor(getResources().getColor(R.color.Grey_5));
-                    }
+                    }*/
                 } else {
                     strPassword = "";
                     btnSignIn.setEnabled(false);

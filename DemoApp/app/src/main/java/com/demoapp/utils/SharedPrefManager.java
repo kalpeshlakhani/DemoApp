@@ -1,4 +1,4 @@
-package com.demoapp.utils;
+package com.demoapp.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -53,7 +53,6 @@ public class SharedPrefManager {
         editor.clear();
         editor.commit();
         editor.apply();
-        System.exit(0);
     }
 
     public boolean isLoggedIn() {

@@ -1,20 +1,16 @@
-package com.demoapp.retrofit;
+package com.demoapp.Retrofit;
 
 
-import com.demoapp.response.MovieDataResponse;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface ApiRequest {
 
-    @GET("3/movie/popular/")
-    Call<MovieDataResponse> getMovieList(
-            @Query("api_key") String apiKey,
-            @Query("page") int page
-            );
+    @GET("movie/popular")
+    Call<ResponseBody> getMovieList(@Query("page") long page);
 
 }
 
