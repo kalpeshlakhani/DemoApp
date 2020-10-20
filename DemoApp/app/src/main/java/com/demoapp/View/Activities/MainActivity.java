@@ -52,15 +52,12 @@ public class MainActivity extends AppCompatActivity {
         setHeader();
 
         initializeMovieData();
-
         Utils.getProgressDialog(MainActivity.this, "Please Wait...");
-
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Utils.hideProgressDialog();
                 initializeMovieData();
             }
-        }, 2000);
+        }, 1000);
     }
 
     private void setHeader() {
@@ -117,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable PagedList<MovieDetails> movies) {
                 Log.d(TAG, "onChanged: " + movies.size());
+                Utils.hideProgressDialog();
                 movieDataAdapter.submitList(movies);
             }
         });
