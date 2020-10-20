@@ -1,6 +1,6 @@
-package com.demoapp.APIUtils;
+package com.demoapp.apiUtils;
 
-import com.demoapp.Retrofit.ServiceGenerator;
+import com.demoapp.retrofit.ServiceGenerator;
 
 public class Image {
 

@@ -1,4 +1,4 @@
-package com.demoapp.APIUtils;
+package com.demoapp.apiUtils;
 
 public class NetworkState {
     private final Status status;

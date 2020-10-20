@@ -1,4 +1,4 @@
-package com.demoapp.View.Activities;
+package com.demoapp.view.activities;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -19,15 +18,14 @@ import androidx.paging.PagedList;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.demoapp.APIUtils.NetworkState;
 import com.demoapp.R;
-import com.demoapp.Manager.ConnectionManager;
-import com.demoapp.Model.MovieDetails;
-import com.demoapp.Utils.SharedPrefManager;
-import com.demoapp.Utils.SpacingItemDecoration;
-import com.demoapp.Utils.Utils;
-import com.demoapp.View.Adapters.MoviesDataAdapter;
-import com.demoapp.ViewModel.MoviesDataViewModel;
+import com.demoapp.manager.ConnectionManager;
+import com.demoapp.model.MovieDetails;
+import com.demoapp.utils.SharedPrefManager;
+import com.demoapp.utils.SpacingItemDecoration;
+import com.demoapp.utils.Utils;
+import com.demoapp.view.adapters.MoviesDataAdapter;
+import com.demoapp.viewModel.MoviesDataViewModel;
 import com.wc.widget.dialog.IosDialog;
 
 import butterknife.BindView;
@@ -42,12 +40,15 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.rvMovies)
     RecyclerView rvMovie;
 
+    @BindView(R.id.ivLogout)
+    ImageView ivLogout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(MainActivity.this);
-
         setHeader();
 
         initializeMovieData();
@@ -63,13 +64,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setHeader() {
-        View headerView = findViewById(R.id.header);
-        ImageView ivBack = headerView.findViewById(R.id.ivBack);
-        ImageView ivLogout = headerView.findViewById(R.id.ivLogout);
-        ivBack.setVisibility(View.INVISIBLE);
-        ivLogout.setVisibility(View.VISIBLE);
-        TextView tvPageName = headerView.findViewById(R.id.tvPageName);
-        tvPageName.setText("Movie List");
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -116,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Please check your internet connection", Toast.LENGTH_SHORT).show();
             return;
         }
+
         movieDataAdapter = new MoviesDataAdapter(MainActivity.this);
         mMoviesViewModel = ViewModelProviders.of(MainActivity.this).get(MoviesDataViewModel.class);
-
         mMoviesViewModel.getMoviesDataList().observe(MainActivity.this, new Observer<PagedList<MovieDetails>>() {
             @Override
             public void onChanged(@Nullable PagedList<MovieDetails> movies) {
@@ -127,13 +121,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mMoviesViewModel.getNetworkStateLiveData().observe(MainActivity.this, new Observer<NetworkState>() {
-            @Override
-            public void onChanged(@Nullable NetworkState networkState) {
-                Log.d(TAG, "onChanged: network state changed");
-                movieDataAdapter.setNetworkState(networkState);
-            }
-        });
         rvMovie.setLayoutManager(new GridLayoutManager(MainActivity.this, 2));
         rvMovie.addItemDecoration(new SpacingItemDecoration(2, Utils.dpToPx(MainActivity.this, 3), true));
         rvMovie.setHasFixedSize(true);

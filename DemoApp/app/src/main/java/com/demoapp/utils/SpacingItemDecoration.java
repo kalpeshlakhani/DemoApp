@@ -1,4 +1,4 @@
-package com.demoapp.Utils;
+package com.demoapp.utils;
 
 import android.graphics.Rect;
 import android.view.View;

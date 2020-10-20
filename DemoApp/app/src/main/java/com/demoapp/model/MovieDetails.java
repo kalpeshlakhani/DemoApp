@@ -1,4 +1,4 @@
-package com.demoapp.Model;
+package com.demoapp.model;
 
 import androidx.recyclerview.widget.DiffUtil;
 

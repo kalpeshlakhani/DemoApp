@@ -16,6 +16,7 @@
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="0dp"
+        android:visibility="invisible"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:layout_weight="0.3"
@@ -32,7 +33,7 @@
         android:singleLine="true"
         android:fontFamily="@font/fonts"
         android:gravity="center"
-        android:text="Home"
+        android:text="Movie List"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         android:textStyle="bold"

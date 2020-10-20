@@ -1,5 +1,5 @@
 
-package com.demoapp.Utils;
+package com.demoapp.utils;
 
 import android.Manifest;
 import android.app.Activity;

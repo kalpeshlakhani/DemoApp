@@ -1,4 +1,4 @@
-package com.demoapp.Utils;
+package com.demoapp.utils;
 
 import android.app.Activity;
 import android.app.ProgressDialog;

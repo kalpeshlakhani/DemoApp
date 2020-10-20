@@ -1,4 +1,4 @@
-package com.demoapp.View.Adapters;
+package com.demoapp.view.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,29 +13,24 @@ import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.demoapp.APIUtils.Image;
-import com.demoapp.APIUtils.NetworkState;
+import com.demoapp.apiUtils.Image;
+import com.demoapp.model.MovieDetails;
 import com.demoapp.R;
-import com.demoapp.Model.MovieDetails;
 
 
 public class MoviesDataAdapter extends PagedListAdapter<MovieDetails, RecyclerView.ViewHolder> {
-    private static final String TAG = "MoviesInTheaterAdapter";
-    public static final int MOVIE_ITEM_VIEW_TYPE = 1;
-    public static final int LOAD_ITEM_VIEW_TYPE = 0;
+    private static final String TAG = "MoviesDataAdapter";
     private Context mContext;
-    private NetworkState mNetworkState;
 
     public MoviesDataAdapter(Context context) {
         super(MovieDetails.DIFF_CALL);
         mContext = context;
     }
 
-
     @Override
     public int getItemViewType(int position) {
         Log.e("getItemCount--", "getItemCount--" + getItemCount());
-        return (isLoadingData() && position == getItemCount() - 1) ? LOAD_ITEM_VIEW_TYPE : MOVIE_ITEM_VIEW_TYPE;
+        return getItemCount();
     }
 
     @NonNull
@@ -43,16 +38,9 @@ public class MoviesDataAdapter extends PagedListAdapter<MovieDetails, RecyclerVi
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view;
-        if (viewType == MOVIE_ITEM_VIEW_TYPE) {
-            view = inflater.inflate(R.layout.item_grid_image_two_line, parent, false);
-            return new MovieViewHolder(view);
-        } else {
-            view = inflater.inflate(R.layout.load_progress_item, parent, false);
-            return new ProgressViewHolder(view);
-        }
-
+        view = inflater.inflate(R.layout.item_grid_image_two_line, parent, false);
+        return new MovieViewHolder(view);
     }
-
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
@@ -61,24 +49,6 @@ public class MoviesDataAdapter extends PagedListAdapter<MovieDetails, RecyclerVi
             MovieDetails movie = getItem(position);
             movieViewHolder.bind(movie, mContext);
         }
-    }
-
-    public void setNetworkState(NetworkState networkState) {
-        NetworkState prevState = networkState;
-        boolean wasLoading = isLoadingData();
-        mNetworkState = networkState;
-        boolean willLoad = isLoadingData();
-        if (wasLoading != willLoad) {
-            if (wasLoading) {
-                notifyItemRemoved(getItemCount());
-            } else {
-                notifyItemInserted(getItemCount());
-            }
-        }
-    }
-
-    public boolean isLoadingData() {
-        return (mNetworkState != null && mNetworkState != NetworkState.LOADED);
     }
 
     private static class MovieViewHolder extends RecyclerView.ViewHolder {
@@ -98,9 +68,4 @@ public class MoviesDataAdapter extends PagedListAdapter<MovieDetails, RecyclerVi
         }
     }
 
-    private static class ProgressViewHolder extends RecyclerView.ViewHolder {
-        public ProgressViewHolder(View itemView) {
-            super(itemView);
-        }
-    }
 }

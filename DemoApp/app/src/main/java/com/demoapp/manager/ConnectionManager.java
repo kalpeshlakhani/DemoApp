@@ -1,4 +1,4 @@
-package com.demoapp.Manager;
+package com.demoapp.manager;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

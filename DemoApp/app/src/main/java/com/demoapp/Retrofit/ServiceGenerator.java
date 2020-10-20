@@ -1,4 +1,4 @@
-package com.demoapp.Retrofit;
+package com.demoapp.retrofit;
 
 import java.io.IOException;
 

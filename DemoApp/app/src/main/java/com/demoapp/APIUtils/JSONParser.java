@@ -1,6 +1,6 @@
-package com.demoapp.APIUtils;
+package com.demoapp.apiUtils;
 
-import com.demoapp.Model.MovieDetails;
+import com.demoapp.model.MovieDetails;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
